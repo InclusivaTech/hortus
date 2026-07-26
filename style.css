@@ -131,6 +131,8 @@ body {
     border-radius: 6px;
     font-weight: 600;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
     transition: all 0.2s;
 }
 
@@ -233,6 +235,45 @@ body {
     font-size: 0.9rem;
 }
 
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-4px);
+}
+
+.gallery-placeholder {
+    height: 180px;
+    background: linear-gradient(135deg, #1b2436, #111827);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--border);
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.gallery-item p {
+    padding: 1.2rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
 /* Tech Grid */
 .tech-grid {
     display: grid;
@@ -256,6 +297,29 @@ body {
 .tech-item p {
     color: var(--text-secondary);
     font-size: 0.9rem;
+}
+
+/* Author Section */
+.author-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 2.5rem;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.author-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.author-info p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 /* Donation Section */
@@ -284,7 +348,7 @@ body {
     border: 1px dashed var(--accent);
     padding: 1rem;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .pix-label {
@@ -300,8 +364,8 @@ body {
     font-weight: 700;
 }
 
-.donation-tip {
-    font-size: 0.85rem;
+.copy-btn {
+    width: 100%;
 }
 
 /* Footer */
