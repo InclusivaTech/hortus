@@ -1,0 +1,285 @@
+:root {
+    --bg-color: #0f1115;
+    --bg-alt: #161920;
+    --card-bg: #1a1e26;
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+    --accent: #10b981; /* Verde sustentável */
+    --accent-hover: #059669;
+    --border: #2d3748;
+    --font: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(15, 17, 21, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+}
+
+.btn-github {
+    background: var(--text-primary);
+    color: var(--bg-color) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600 !important;
+    transition: opacity 0.2s !important;
+}
+
+.btn-github:hover {
+    opacity: 0.9;
+}
+
+/* Hero Section */
+.hero {
+    padding: 10rem 0 6rem 0;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--accent);
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    max-width: 650px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn.primary {
+    background: var(--accent);
+    color: #ffffff;
+}
+
+.btn.primary:hover {
+    background: var(--accent-hover);
+}
+
+.btn.secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+}
+
+.btn.secondary:hover {
+    background: var(--bg-alt);
+}
+
+/* Sections */
+.section {
+    padding: 5rem 0;
+}
+
+.bg-alt {
+    background-color: var(--bg-alt);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.section-header h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+}
+
+/* Grids */
+.grid-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.card .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.tech-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.tech-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+}
+
+.tech-item p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    padding: 3rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.social-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: var(--text-primary);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    .nav-links {
+        display: none;
+    }
+}
