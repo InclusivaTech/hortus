@@ -1,8 +1,7 @@
-// Script básico para inicialização e comportamento suave do site
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Hortus Interface Carregada com Sucesso.');
-    
-    // Suavizar rolagem para links internos
+    console.log('Hortus Gamified Interface Ativada.');
+
+    // Rolagem suave para os links internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
