@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hortus — Ecossistema Digital & Inclusão</title>
+    <title>Hortus — Ecossistema Digital, Inclusão e Sustentabilidade</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,22 +17,23 @@
             <div class="logo">Hortus<span>.</span></div>
             <nav class="nav-links">
                 <a href="#missao">Missões</a>
-                <a href="#tecnologia">Tech</a>
-                <a href="#apoie" class="nav-highlight">Apoiar Missão</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#quem-faz">Quem Faz</a>
+                <a href="#apoie" class="nav-highlight">Apoiar Projeto</a>
                 <a href="https://github.com/InclusivaTech/hortus" target="_blank" class="btn-github">GitHub</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section com Toque Gamificado -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-content">
             <div class="badge">🎮 Projeto Gamificado & Open Source</div>
-            <h1>Explore o ecossistema digital do Hortus.</h1>
-            <p>Um ambiente imersivo em Unity que une sustentabilidade, mecânicas conscientes e acessibilidade pedagógica profunda.</p>
+            <h1>Ecossistemas digitais para um futuro inclusivo.</h1>
+            <p>Hortus é um ambiente imersivo desenvolvido na Unity que une preservação ambiental, mecânicas conscientes e acessibilidade pedagógica profunda.</p>
             <div class="hero-actions">
                 <a href="#apoie" class="btn primary">⚡ Energizar Projeto (Apoiar)</a>
-                <a href="#missao" class="btn secondary">Ver Missões Ativas</a>
+                <a href="#missao" class="btn secondary">Ver Mapa de Missões</a>
             </div>
         </div>
     </section>
@@ -64,8 +65,38 @@
         </div>
     </section>
 
+    <!-- Galeria de Conceito Visual -->
+    <section id="galeria" class="section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galeria de Conceito Visual</h2>
+                <p>Prévia da atmosfera imersiva, iluminação dinâmica e elementos da biodiversidade.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>✨ Vaga-lumes & Luz Dinâmica</span>
+                    </div>
+                    <p>Testes de iluminação atmosférica guiada por partículas interativas.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🌿 Desenho Universal em Unity</span>
+                    </div>
+                    <p>Interfaces adaptativas focadas em acessibilidade pedagógica total.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🌙 Ecossistema Sustentável</span>
+                    </div>
+                    <p>Interações conscientes com a flora e fauna em ambiente 3D.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Stack Tecnológica -->
-    <section id="tecnologia" class="section bg-alt">
+    <section class="section">
         <div class="container">
             <div class="section-header">
                 <h2>Stack Tecnológica</h2>
@@ -88,22 +119,39 @@
         </div>
     </section>
 
-    <!-- Seção de Apoio / Doações Gamificada -->
+    <!-- Quem Faz o Hortus -->
+    <section id="quem-faz" class="section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quem Faz o Hortus</h2>
+                <p>Unindo educação inclusiva, pesquisa acadêmica e inovação tecnológica.</p>
+            </div>
+            <div class="author-card">
+                <div class="author-info">
+                    <h3>InclusivaTech & Pesquisa Educacional</h3>
+                    <p>O Hortus nasce da interseção entre a prática pedagógica inclusiva de ponta e o desenvolvimento de softwares e ecossistemas digitais interativos. Um projeto dedicado a transformar a forma como tecnologia e sustentabilidade caminham juntas na educação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Apoio / Doações Elegante -->
     <section id="apoie" class="section donation-section">
         <div class="container">
             <div class="section-header">
-                <h2>Envie Energia para o Hortus 💚</h2>
-                <p>Torne-se um aliado oficial do projeto e ajude a desbloquear as próximas fases tecnológicas e educacionais.</p>
+                <h2>Fortaleça o Hortus 💚</h2>
+                <p>Sua contribuição apoia diretamente a evolução tecnológica e educacional do projeto.</p>
             </div>
             <div class="donation-card">
                 <div class="donation-info">
-                    <h3>Ativar Contribuição via Pix</h3>
-                    <p>Sua ajuda impulsiona diretamente o desenvolvimento das mecânicas inclusivas e sustentáveis do jogo.</p>
+                    <h3>Contribuição Instantânea via Pix</h3>
+                    <p>Copie a chave abaixo ou use o botão para apoiar a manutenção e expansão do Hortus:</p>
                     <div class="pix-box">
-                        <span class="pix-label">Chave Pix do Projeto:</span>
-                        <code class="pix-key">sua-chave-pix-aqui</code>
+                        <span class="pix-label">Chave Pix (E-mail / Aleatória):</span>
+                        <code class="pix-key" id="pixKeyText">sua-chave-pix-aqui</code>
                     </div>
-                    <p class="donation-tip">💡 <em>Copie a chave acima e cole no seu aplicativo bancário para energizar o Hortus!</em></p>
+                    <button class="btn primary copy-btn" id="copyPixBtn">📋 Copiar Chave Pix</button>
+                    <p class="donation-tip" id="copyFeedback" style="margin-top: 10px; color: var(--accent); display: none;">Chave copiada com sucesso!</p>
                 </div>
             </div>
         </div>
