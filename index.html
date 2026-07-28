@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hortus — Ecossistema Digital, Inclusão e Sustentabilidade</title>
+    
+    <!-- SEO & Metadados -->
+    <title>Hortus — Ecossistemas digitais para um futuro inclusivo</title>
+    <meta name="description" content="Hortus é um ambiente imersivo desenvolvido na Unity que une preservação ambiental, mecânicas conscientes e acessibilidade pedagógica profunda.">
+    
+    <!-- Open Graph / Redes Sociais e WhatsApp -->
+    <meta property="og:title" content="Hortus — Ecossistemas digitais para um futuro inclusivo">
+    <meta property="og:description" content="Conheça o ecossistema digital interativo desenvolvido com foco em inclusão, sustentabilidade e Green Software.">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,43 +20,42 @@
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header class="navbar">
+    <!-- Cabeçalho (Sem o link de metas) -->
+    <header class="navbar" role="banner">
         <div class="container nav-container">
-            <div class="logo">Hortus<span>.</span></div>
-            <nav class="nav-links">
+            <div class="logo" aria-label="Hortus Início">Hortus<span>.</span></div>
+            <nav class="nav-links" role="navigation" aria-label="Menu Principal">
                 <a href="#green">Green Software</a>
-                <a href="#metas">10 Metas</a>
                 <a href="#vitrine">Vitrine Eco</a>
                 <a href="#galeria">Mídia & Vídeos</a>
                 <a href="#apoie" class="nav-highlight">Apoiar</a>
-                <a href="https://github.com/InclusivaTech/hortus" target="_blank" class="btn-github">GitHub</a>
+                <a href="https://github.com/InclusivaTech/hortus" target="_blank" rel="noopener noreferrer" class="btn-github">GitHub</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Hero Section (Com os textos e botões da primeira imagem) -->
+    <section class="hero" role="region" aria-label="Apresentação">
         <div class="container hero-content">
-            <div class="badge">🌱 Arquitetura Consciente & Baixa Emissão de CO₂</div>
-            <h1>Tecnologia, Inclusão e Natureza em Harmonia.</h1>
-            <p>Hortus é um ambiente interativo desenvolvido na Unity que une preservação ambiental, mecânicas conscientes e acessibilidade pedagógica profunda.</p>
+            <div class="badge">🎮 Projeto Gamificado & Open Source</div>
+            <h1>Ecossistemas digitais para um futuro inclusivo.</h1>
+            <p>Hortus é um ambiente imersivo desenvolvido na Unity que une preservação ambiental, mecânicas conscientes e acessibilidade pedagógica profunda.</p>
             <div class="hero-actions">
-                <a href="#vitrine" class="btn primary">🛍️ Conhecer Vitrine Eco</a>
-                <a href="#metas" class="btn secondary">Ver as 10 Metas</a>
+                <a href="#apoie" class="btn primary">⚡ Energizar Projeto (Apoiar)</a>
+                <a href="#vitrine" class="btn secondary">Conhecer Vitrine Eco</a>
             </div>
         </div>
     </section>
 
     <!-- Seção Green Software -->
-    <section id="green" class="section bg-alt">
+    <section id="green" class="section bg-alt" role="region" aria-label="Green Software">
         <div class="container">
             <div class="section-header">
                 <h2>Compromisso com Green Software</h2>
                 <p>Desenvolvimento focado em eficiência energética e sustentabilidade digital.</p>
             </div>
             <div class="green-card">
-                <div class="green-icon">🍃</div>
+                <div class="green-icon" aria-hidden="true">🍃</div>
                 <div class="green-info">
                     <h3>Código Limpo & Baixa Pegada de Carbono</h3>
                     <p>Este site e o ecossistema Hortus são arquitetados para consumir o mínimo de recursos computacionais possíveis. Otimizamos assets, utilizamos estilização pura e hospedagem verde para garantir uma <strong>redução expressiva na emissão de CO₂</strong> por acesso. Sustentabilidade que começa na linha de código.</p>
@@ -56,110 +64,8 @@
         </div>
     </section>
 
-    <!-- As 10 Metas de Desenvolvimento -->
-    <section id="metas" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Metas de Desenvolvimento</h2>
-                <p>O roteiro estratégico de 10 passos para a consolidação completa do ecossistema Hortus.</p>
-            </div>
-            
-            <div class="timeline-grid">
-                <div class="timeline-item completed">
-                    <span class="timeline-number">01</span>
-                    <div class="timeline-content">
-                        <h3>Concepção Pedagógica & Desenho Universal</h3>
-                        <p>Definição das diretrizes de acessibilidade e inclusão estrutural desde a raiz do projeto.</p>
-                        <span class="status-badge done">Concluído</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item completed">
-                    <span class="timeline-number">02</span>
-                    <div class="timeline-content">
-                        <h3>Arquitetura de Software em C#</h3>
-                        <p>Criação de scripts limpos, desacoplados e orientados a objetos para estabilidade na Unity.</p>
-                        <span class="status-badge done">Concluído</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item active">
-                    <span class="timeline-number">03</span>
-                    <div class="timeline-content">
-                        <h3>Prototipagem do Motor Gráfico Unity</h3>
-                        <p>Configuração inicial de iluminação atmosférica, renderização e portabilidade multiplataforma.</p>
-                        <span class="status-badge progress">Em Andamento</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item active">
-                    <span class="timeline-number">04</span>
-                    <div class="timeline-content">
-                        <h3>Mecânica de Partículas (Vaga-lumes & Libélulas)</h3>
-                        <p>Desenvolvimento dos elementos visuais interativos guiados pela fauna e flora local.</p>
-                        <span class="status-badge progress">Em Andamento</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item pending">
-                    <span class="timeline-number">05</span>
-                    <div class="timeline-content">
-                        <h3>Interface Adaptativa & Leitores de Tela</h3>
-                        <p>Garantia de usabilidade completa para aprendizes com diferentes perfis e necessidades.</p>
-                        <span class="status-badge">Planejado</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item pending">
-                    <span class="timeline-number">06</span>
-                    <div class="timeline-content">
-                        <h3>Trilha Sonora & Ambientação Sonora Imersiva</h3>
-                        <p>Composição de sonoridades relaxantes integradas às interações do usuário com o ambiente.</p>
-                        <span class="status-badge">Planejado</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item pending">
-                    <span class="timeline-number">07</span>
-                    <div class="timeline-content">
-                        <h3>Testes de Usabilidade em Rede Municipal</h3>
-                        <p>Validação prática das ferramentas pedagógicas em ambiente educacional real.</p>
-                        <span class="status-badge">Planejado</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item pending">
-                    <span class="timeline-number">08</span>
-                    <div class="timeline-content">
-                        <h3>Integração com Realidade Estendida (XR)</h3>
-                        <p>Preparação estrutural para experiências imersivas em dispositivos de realidade virtual.</p>
-                        <span class="status-badge">Planejado</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item pending">
-                    <span class="timeline-number">09</span>
-                    <div class="timeline-content">
-                        <h3>Escaneamento Espacial & Tecnologias LiDAR</h3>
-                        <p>Aproveitamento de sensores avançados para integração de ambientes reais ao ecossistema.</p>
-                        <span class="status-badge">Planejado</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item pending">
-                    <span class="timeline-number">10</span>
-                    <div class="timeline-content">
-                        <h3>Lançamento Open Source Global (Licença MIT)</h3>
-                        <p>Disponibilização pública de todo o código e documentação para educadores e desenvolvedores.</p>
-                        <span class="status-badge">Planejado</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Vitrine / Loja de Apoio Eco -->
-    <section id="vitrine" class="section bg-alt">
+    <section id="vitrine" class="section" role="region" aria-label="Vitrine Sustentável">
         <div class="container">
             <div class="section-header">
                 <h2>Vitrine Sustentável do Hortus</h2>
@@ -168,7 +74,7 @@
             
             <div class="store-grid">
                 <div class="store-card">
-                    <div class="store-img-placeholder">
+                    <div class="store-img-placeholder" aria-hidden="true">
                         <span>👕 [ Mockup Camiseta ]</span>
                     </div>
                     <div class="store-info">
@@ -182,7 +88,7 @@
                 </div>
 
                 <div class="store-card">
-                    <div class="store-img-placeholder">
+                    <div class="store-img-placeholder" aria-hidden="true">
                         <span>🛍️ [ Mockup Ecobag ]</span>
                     </div>
                     <div class="store-info">
@@ -199,7 +105,7 @@
     </section>
 
     <!-- Galeria & Vídeos Interativos -->
-    <section id="galeria" class="section">
+    <section id="galeria" class="section bg-alt" role="region" aria-label="Galeria e Vídeos">
         <div class="container">
             <div class="section-header">
                 <h2>Galeria & Vídeos Interativos</h2>
@@ -208,7 +114,7 @@
             
             <div class="media-grid">
                 <div class="media-card">
-                    <div class="video-container-placeholder">
+                    <div class="video-container-placeholder" aria-hidden="true">
                         <div class="play-icon">▶</div>
                         <span>Gameplay: Vaga-lumes na Unity</span>
                     </div>
@@ -219,7 +125,7 @@
                 </div>
 
                 <div class="media-card">
-                    <div class="video-container-placeholder">
+                    <div class="video-container-placeholder" aria-hidden="true">
                         <div class="play-icon">▶</div>
                         <span>Interface de Desenho Universal</span>
                     </div>
@@ -233,7 +139,7 @@
     </section>
 
     <!-- Seção de Apoio / Doações -->
-    <section id="apoie" class="section donation-section bg-alt">
+    <section id="apoie" class="section donation-section" role="region" aria-label="Apoio ao Projeto">
         <div class="container">
             <div class="section-header">
                 <h2>Fortaleça o Hortus 💚</h2>
@@ -255,15 +161,14 @@
     </section>
 
     <!-- Rodapé -->
-    <footer>
+    <footer role="contentinfo">
         <div class="container footer-content">
             <p>&copy; 2026 Projeto Hortus. Desenvolvido sob a licença MIT com Green Software.</p>
             <div class="social-links">
-                <a href="https://github.com/InclusivaTech/hortus" target="_blank">GitHub</a>
+                <a href="https://github.com/InclusivaTech/hortus" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
