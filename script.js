@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Hortus Interface Completa Ativada.');
+    console.log('Hortus v2.0 Minimalista Ativado.');
 
     // Rolagem suave para os links internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
