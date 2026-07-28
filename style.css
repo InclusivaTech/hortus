@@ -156,6 +156,11 @@ body {
     background: var(--bg-alt);
 }
 
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+}
+
 /* Sections */
 .section {
     padding: 5rem 0;
@@ -182,6 +187,96 @@ body {
 .section-header p {
     color: var(--text-secondary);
     font-size: 0.95rem;
+}
+
+/* Green Software Card */
+.green-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 2.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.green-icon {
+    font-size: 3rem;
+    background: rgba(16, 185, 129, 0.1);
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.green-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.green-info p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Store / Vitrine Grid */
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.store-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.store-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(16, 185, 129, 0.4);
+}
+
+.store-img-placeholder {
+    height: 180px;
+    background: linear-gradient(135deg, #162032, #0d131f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.store-info {
+    padding: 1.5rem;
+}
+
+.store-info h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+    color: #ffffff;
+}
+
+.store-info p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.store-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent);
 }
 
 /* Timeline / 10 Metas */
@@ -329,26 +424,6 @@ body {
     color: var(--text-secondary);
 }
 
-/* Author Section */
-.author-card {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    padding: 2.5rem;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.author-info h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.75rem;
-}
-
-.author-info p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
 /* Donation Section */
 .donation-card {
     background: linear-gradient(135deg, var(--card-bg), #121926);
@@ -420,6 +495,10 @@ footer {
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.1rem;
+    }
+    .green-card {
+        flex-direction: column;
+        text-align: center;
     }
     .footer-content {
         flex-direction: column;
